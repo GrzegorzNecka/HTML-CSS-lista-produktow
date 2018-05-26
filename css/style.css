@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #98fb98;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+.row {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.products {
+    height: 100%;
+    width: calc(25% - 20px);
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.backgorund {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.products:hover .mask {
+    opacity: 1;
+}
+
+.mask {
+    position: relative;
+    background-color: rgba(255, 111, 0, 0.5);
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.mask .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 5em;
+}
+
+#item1 {
+    background-image: url(../img/product-1.jpg);
+}
+
+#item2 {
+    background-image: url(../img/product-2.jpg);
+}
+
+#item3 {
+    background-image: url(../img/product-3.jpg);
+}
+
+#item4 {
+    background-image: url(../img/product-4.jpg);
+}

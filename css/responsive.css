@@ -1,0 +1,12 @@
+@media all and (max-width: 992px) {
+    .products {
+
+        width: calc(50% - 20px);
+    }
+
+    @media all and (max-width: 480px) {
+        .products {
+
+      width: calc(100% - 20px);
+        }
+    }
